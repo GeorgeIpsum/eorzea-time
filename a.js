@@ -9,6 +9,7 @@ const update = () => {
   const E_TIMESTAMP = Math.floor(GLOBAL.utcTime * EORZEA_RATIO);
   GLOBAL.eorzeaTime = new Date();
   GLOBAL.eorzeaTime.setTime(E_TIMESTAMP);
+  updateDocument();
 };
 
 const updateDocument = () => {

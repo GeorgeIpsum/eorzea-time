@@ -32,4 +32,4 @@ function padLeft(val) {
 }
 
 window.setInterval(update, Math.floor((1000 * 60) / EORZEA_RATIO));
-updateClock();
+update();

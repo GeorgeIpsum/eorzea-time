@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Eorzean Time</title>
   <meta name="description" content="Utility to determine current Eorzean time">
+  <link rel="stylesheet" href="styles.css" />
   <script src="a.js"></script>
 </head>
-<body>
-  <div id="eorzea-time"></div>
+<body style="padding: 1rem;">
+  <div style="display: flex; margin-top: 1rem;">
+    <div style="margin-right: 1rem;">Local Time in Eorzea is:</div>
+    <div id="eorzea-time"></div>
+  </div>
+
+  <div style="display: flex; margin-top: 1rem; align-items: center;">
+    <div style="margin-right: 5px;">Time until</div>
+    <input style="margin-right: 5px;" type="time" id="offset-timer" value="12:00" />
+    <div id="time-until"></div>
+  </div>
 </body>
 </html>

@@ -4,8 +4,6 @@ const GLOBAL = {
   eorzeaTime: null
 };
 
-window.setInterval(update, Math.floor((1000 * 60) / EORZEA_RATIO));
-
 const update = () => {
   GLOBAL.utcTime = new Date().getTime();
   const E_TIMESTAMP = Math.floor(GLOBAL.utcTime * EORZEA_RATIO);
@@ -33,4 +31,5 @@ function padLeft(val) {
   return pad.substring(0, pad.length - str.length) + str;
 }
 
+window.setInterval(update, Math.floor((1000 * 60) / EORZEA_RATIO));
 updateClock();
